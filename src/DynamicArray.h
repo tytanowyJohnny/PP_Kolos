@@ -18,10 +18,13 @@ public:
 	int getArraySize() const;
 	void setArraySize(int arraySize);
 	int* getDynamicArray() const;
+	void addElement(int arrayElement);
+	int getArrayElements() const;
 
 private:
 	int arraySize;
 	int * dynamicArray;
+	int arrayElements;
 };
 
 } /* namespace std */

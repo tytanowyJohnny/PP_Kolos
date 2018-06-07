@@ -21,18 +21,29 @@ int main() {
 
 	// konstruktor 2 parametrowy
 	DynamicArray myArray = DynamicArray(20, 4);
+
 	// konstruktor 1 parametrowy
 	DynamicArray * myArray_1 = new DynamicArray(20);
 
+	// dodawanie elemntu
+	myArray.addElement(60);
 
-	/*
-	 * Wyswietlenie tablic
-	 */
-	cout << "myArray | myArray_1" << endl;
+	// wyswietlenie dodanego elementu
+	cout << "Dodany element do myArray: " << myArray.getDynamicArray()[20] << endl;
 
-	for(int i = 0; i < myArray.getArraySize(); i++) {
+	//rozmiar tablic
+	cout << "myArray size: " << myArray.getArraySize() << endl;
+	cout << "myArray_1 size: " << myArray_1->getArraySize() << endl;
 
-		cout << myArray.getDynamicArray()[i] << " | " << myArray_1->getDynamicArray()[i] << endl;
+	// liczba elementow tablic
+	cout << "myArray elements: " << myArray.getArrayElements() << endl;
+	cout << "myArray_1 elements: " << myArray_1->getArrayElements() << endl;
+
+	// destruktor check
+	while(true) {
+
+		DynamicArray * destruct_test = new DynamicArray(10);
+		delete destruct_test;
 	}
 
 	return 0;
