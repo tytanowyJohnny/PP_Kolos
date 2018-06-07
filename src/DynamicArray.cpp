@@ -71,6 +71,21 @@ void DynamicArray::addElement(int arrayElement) {
 
 }
 
+ostream& operator<< (ostream &out, DynamicArray const& array) {
+
+	for(int i = 0; i < array.getArraySize(); i++) {
+
+		out << array.getDynamicArray()[i];
+
+		if(i < array.getArraySize() - 1)
+			cout << ", ";
+
+	}
+
+	return out;
+}
+
+
 int DynamicArray::getArraySize() const {
 	return arraySize;
 }

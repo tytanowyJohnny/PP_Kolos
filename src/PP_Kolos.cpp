@@ -31,6 +31,10 @@ int main() {
 	// wyswietlenie dodanego elementu
 	cout << "Dodany element do myArray: " << myArray.getDynamicArray()[20] << endl;
 
+	// przeladowanie opratora
+	cout << "Przeladowanie myArray: " << myArray << endl;
+	cout << "Przeladowanie myArray_1: " << myArray_1 << endl;
+
 	//rozmiar tablic
 	cout << "myArray size: " << myArray.getArraySize() << endl;
 	cout << "myArray_1 size: " << myArray_1->getArraySize() << endl;

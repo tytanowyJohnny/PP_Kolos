@@ -8,6 +8,8 @@
 #ifndef DYNAMICARRAY_H_
 #define DYNAMICARRAY_H_
 
+#include <iostream>
+
 namespace std {
 
 class DynamicArray {
@@ -20,6 +22,7 @@ public:
 	int* getDynamicArray() const;
 	void addElement(int arrayElement);
 	int getArrayElements() const;
+	friend ostream& operator<<(ostream&, DynamicArray const&);
 
 private:
 	int arraySize;
