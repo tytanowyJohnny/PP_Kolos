@@ -22,7 +22,7 @@ int main() {
 	// konstruktor 2 parametrowy
 	DynamicArray myArray = DynamicArray(20, 4);
 	// konstruktor 1 parametrowy
-	DynamicArray myArray_1 = DynamicArray(20);
+	DynamicArray * myArray_1 = new DynamicArray(20);
 
 
 	/*
@@ -32,7 +32,7 @@ int main() {
 
 	for(int i = 0; i < myArray.getArraySize(); i++) {
 
-		cout << myArray.getDynamicArray()[i] << " | " << myArray_1.getDynamicArray()[i] << endl;
+		cout << myArray.getDynamicArray()[i] << " | " << myArray_1->getDynamicArray()[i] << endl;
 	}
 
 	return 0;
