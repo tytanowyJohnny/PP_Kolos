@@ -71,11 +71,21 @@ void DynamicArray::addElement(int arrayElement) {
 
 }
 
+int DynamicArray::operator[] (int element) {
+
+	if(element >= 0 && element < this->arraySize) {
+		return this->dynamicArray[element];
+	} else {
+
+		cout << "Poza zakresem!" << endl;
+	}
+}
+
 ostream& operator<< (ostream &out, DynamicArray const& array) {
 
 	for(int i = 0; i < array.getArraySize(); i++) {
 
-		out << array.getDynamicArray()[i];
+		out << array[i];
 
 		if(i < array.getArraySize() - 1)
 			cout << ", ";

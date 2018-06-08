@@ -29,7 +29,7 @@ int main() {
 	myArray.addElement(60);
 
 	// wyswietlenie dodanego elementu
-	cout << "Dodany element do myArray: " << myArray.getDynamicArray()[20] << endl;
+	cout << "Dodany element do myArray: " << myArray[20] << endl;
 
 	// przeladowanie opratora
 	cout << "Przeladowanie myArray: " << myArray << endl;

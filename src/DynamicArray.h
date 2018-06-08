@@ -23,6 +23,7 @@ public:
 	void addElement(int arrayElement);
 	int getArrayElements() const;
 	friend ostream& operator<<(ostream&, DynamicArray const&);
+	int operator[](int);
 
 private:
 	int arraySize;
