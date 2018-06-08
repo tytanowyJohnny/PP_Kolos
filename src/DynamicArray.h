@@ -24,6 +24,7 @@ public:
 	int getArrayElements() const;
 	friend ostream& operator<<(ostream&, DynamicArray const&);
 	int operator[](int);
+	DynamicArray operator=(int);
 
 private:
 	int arraySize;

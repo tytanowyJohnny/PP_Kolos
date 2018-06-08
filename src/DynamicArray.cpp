@@ -71,6 +71,11 @@ void DynamicArray::addElement(int arrayElement) {
 
 }
 
+DynamicArray DynamicArray::operator=(int size) {
+
+	return DynamicArray(size);
+}
+
 int DynamicArray::operator[] (int element) {
 
 	if(element >= 0 && element < this->arraySize) {
@@ -78,6 +83,7 @@ int DynamicArray::operator[] (int element) {
 	} else {
 
 		cout << "Poza zakresem!" << endl;
+		return 0;
 	}
 }
 
